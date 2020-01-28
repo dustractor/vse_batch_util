@@ -16,6 +16,8 @@ def which(binary):
             ).resolve()
     if t.is_file():
         return str(t)
+    else:
+        return ""
 
 
 def batch(binary,cmd,inputdir,outputdir,glob_pat="*.png"):
